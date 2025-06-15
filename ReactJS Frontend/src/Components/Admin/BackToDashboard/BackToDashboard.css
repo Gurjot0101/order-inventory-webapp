@@ -1,0 +1,33 @@
+/* BackToDashboard.css */
+ 
+.back-to-dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+ 
+.back-to-dashboard-heading {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+ 
+.back-to-dashboard-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+.back-to-dashboard-button:hover {
+    background-color: #0056b3;
+}
+ 
+ 

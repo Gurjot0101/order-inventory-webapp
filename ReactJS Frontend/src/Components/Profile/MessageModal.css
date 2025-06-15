@@ -1,0 +1,45 @@
+.modal-overlay {
+  position: fixed; /* Fixes the overlay in place relative to the viewport */
+  top: 0; /* Positions the overlay at the top of the viewport */
+  left: 0; /* Positions the overlay at the left edge of the viewport */
+  width: 100%; /* Makes the overlay span the full width of the viewport */
+  height: 100%; /* Makes the overlay span the full height of the viewport */
+  background: rgba(0, 0, 0, 0.5); /* Sets a semi-transparent black background */
+  display: flex; /* Uses Flexbox layout to align child elements */
+  align-items: center; /* Vertically centers child elements within the overlay */
+  justify-content: center; /* Horizontally centers child elements within the overlay */
+}
+
+.modal-content {
+  background: #ffffff; /* Sets a white background color for the modal content */
+  padding: 20px; /* Adds padding inside the modal content */
+  border-radius: 8px; /* Rounds the corners of the modal content */
+  text-align: center; /* Centers the text inside the modal content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adds a shadow effect around the modal content */
+}
+
+.modal-content p {
+  font-size: 18px; /* Sets the font size for text inside the modal content */
+}
+
+.modal-content button {
+  background-color: #4caf50; /* Sets a green background color for the button */
+  color: white; /* Sets the text color of the button to white */
+  border: none; /* Removes the default border of the button */
+  padding: 10px 20px; /* Adds padding inside the button (10px top/bottom, 20px left/right) */
+  border-radius: 5px; /* Rounds the corners of the button */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+  font-size: 16px; /* Sets the font size of the button text */
+}
+
+.modal-content button:hover {
+  background-color: #45a049; /* Changes the background color to a darker green when hovering over the button */
+}
+
+.modal-content.error button {
+  background-color: #f44336; /* Sets a red background color for buttons inside error modals */
+}
+
+.modal-content.error button:hover {
+  background-color: #e53935; /* Changes the background color to a darker red when hovering over the button inside error modals */
+}

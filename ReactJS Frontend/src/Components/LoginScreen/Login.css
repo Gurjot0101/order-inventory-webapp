@@ -1,0 +1,153 @@
+/* Main login page styles */
+.login-page {
+  background-color: #000000; /* Set background color to black */
+}
+
+/* Login section styles */
+.login {
+  /* background-color: #00362c; */ /* Optional background color */
+  background-image: url("../../../public/loginBg.jpg"); /* Background image for the login section */
+  background-size: cover; /* Cover the entire background */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  display: flex; /* Use flexbox for layout */
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Center vertically */
+}
+
+/* Container for login elements */
+.login__container {
+  margin: 3.125rem; /* Set margin */
+  margin-top: 7rem; /* Top margin */
+  padding-top: 4.25rem; /* Top padding */
+  padding-bottom: 4.25rem; /* Bottom padding */
+  padding-left: 3.125rem; /* Left padding */
+  padding-right: 3.125rem; /* Right padding */
+  text-align: center; /* Center text */
+  width: 25%; /* Set width */
+  height: 60%; /* Set height */
+  background-color: #ffffff92; /* Semi-transparent white background */
+  color: rgb(0, 0, 0); /* Text color */
+  opacity: 90%; /* Opacity for the container */
+  border-radius: 0.625rem; /* Rounded corners */
+  box-shadow: 0px 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12); /* Subtle shadow effect */
+}
+
+/* Header styles */
+h1 {
+  font-size: 2.5rem; /* Set font size for headers */
+}
+
+/* Styles for images inside anchor tags */
+a > img {
+  object-fit: contain; /* Maintain aspect ratio */
+  height: 12.5rem; /* Set image height */
+  width: 12.5rem; /* Set image width */
+  margin-bottom: 1.875rem; /* Bottom margin */
+  transition: 300ms ease-in; /* Smooth transition effect */
+}
+
+/* Hover effect for images */
+a > img:hover {
+  transform: scale(1.2); /* Scale image on hover */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: 300ms ease-out; /* Smooth transition effect */
+}
+
+/* Styles for buttons in the container */
+.login__container > button {
+  margin-top: 3.125rem; /* Top margin */
+  text-transform: inherit !important; /* Inherit text transformation */
+  background-color: #7d00e3 !important; /* Button background color */
+  color: #faefde; /* Button text color */
+}
+
+/* Styles for the login button */
+.login-btn {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center content */
+  vertical-align: middle; /* Align items vertically */
+  color: white; /* Text color */
+  font-size: 1.125rem; /* Font size */
+  font-weight: bold; /* Bold text */
+  margin: 1.875rem auto; /* Vertical margins with automatic horizontal margins */
+  background-color: rgb(37, 37, 37); /* Background color */
+  border-radius: 0.9375rem; /* Rounded corners */
+  min-width: fit-content; /* Minimum width based on content */
+  width: 40%; /* Set width */
+  padding-left: 0.625rem; /* Left padding */
+  padding-right: 0.625rem; /* Right padding */
+  padding-top: 0.5rem; /* Top padding */
+  padding-bottom: 0.625rem; /* Bottom padding */
+  cursor: pointer; /* Change cursor to pointer */
+  border: 0.125rem solid #330060; /* Border style */
+}
+
+/* Hover effect for the login button */
+.login-btn:hover {
+  transition: 400ms; /* Transition duration */
+  background-color: #440071c4; /* Change background color on hover */
+  border: 0.125rem solid #000000; /* Change border color on hover */
+}
+
+/* Styles for images inside login buttons */
+.login-btn > img {
+  margin-left: 0.3125rem; /* Left margin */
+  width: 16%; /* Set image width */
+}
+
+/* Styles for the sign-up button */
+.sign-btn {
+  transition: 500ms; /* Transition duration */
+  width: 80%; /* Set width */
+  height: 2.5rem; /* Set height */
+  border: 0.125rem black solid; /* Solid black border */
+  border-radius: 0.5rem; /* Rounded corners */
+  background-color: #fa000015; /* Semi-transparent background color */
+  font-size: 1.125rem; /* Font size */
+  padding: 0.3125rem; /* Padding */
+}
+
+/* Active state for the sign-up button */
+.sign-btn:active {
+  padding: 0.625rem; /* Increase padding on active */
+  color: grey; /* Change text color on active */
+}
+
+/* Placeholder styles for input fields */
+.sign-btn::placeholder {
+  padding: 0.625rem; /* Padding for placeholder */
+  color: grey; /* Placeholder color */
+}
+
+/* Styles for sign text */
+.signtext {
+  transition: 500ms; /* Transition duration */
+  cursor: pointer; /* Change cursor to pointer */
+  max-width: max-content; /* Maximum width based on content */
+}
+
+/* Hover effect for sign text */
+.signtext:hover {
+  color: rgb(226, 43, 150); /* Change color on hover */
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 700px) {
+  .login__container {
+    margin: 0rem; /* Remove margins */
+    margin-top: 0rem; /* Remove top margin */
+    padding-top: 20.25rem; /* Increase top padding */
+    padding-bottom: 4.25rem; /* Bottom padding */
+    padding-left: 3.125rem; /* Left padding */
+    padding-right: 3.125rem; /* Right padding */
+    text-align: center; /* Center text */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: #ffffff92; /* Semi-transparent white background */
+    color: rgb(0, 0, 0); /* Text color */
+    opacity: 90%; /* Opacity for the container */
+    border-radius: 0.625rem; /* Rounded corners */
+    box-shadow: 0px 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12); /* Subtle shadow effect */
+  }
+}

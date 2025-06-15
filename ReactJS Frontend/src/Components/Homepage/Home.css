@@ -1,0 +1,261 @@
+.home {
+  font-family: "Arial", sans-serif; /* Set font family for the home page */
+  text-align: center; /* Center-align text */
+  padding: 10px; /* Add padding */
+  background-size: cover; /* Cover the background with the image */
+  background-position: center; /* Center the background image */
+  overflow: hidden; /* Hide overflow content */
+  min-height: 100vh; /* Minimum height of the home page is 100% of the viewport height */
+  color: #333; /* Set default text color */
+  background-color: black; /* Set background color to black */
+  padding-top: 2rem; /* Add top padding */
+}
+
+.home-dash {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center-align children */
+  width: 95vw; /* Set width to 95% of the viewport width */
+  height: 76vh; /* Set height to 76% of the viewport height */
+  background-image: url("../../../public/home_wall.jpg"); /* Background image */
+  box-shadow: 0 0 15px 20px black inset; /* Add inner shadow */
+}
+
+.search-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center-align children */
+  margin-top: 7vh; /* Add top margin */
+  margin-bottom: 8vh; /* Add bottom margin */
+}
+
+.search {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap */
+  flex-direction: row; /* Align items in a row */
+  word-break: keep-all; /* Prevent word breaking */
+  width: 40vw; /* Set width to 40% of the viewport width */
+  text-align: center; /* Center-align text */
+}
+
+.search-box {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center-align items vertically */
+  border: 2px solid #ddd; /* Light gray border */
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px; /* Add padding */
+  width: 60%; /* Set width to 60% */
+  max-width: 600px; /* Maximum width */
+  background-color: #fff; /* White background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+  margin: 0px auto; /* Center the box horizontally */
+}
+
+.search-input {
+  width: 60%; /* Set width to 60% */
+  padding: 10px; /* Add padding */
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  font-size: 16px; /* Font size */
+}
+
+.search-button:hover {
+  background-color: #666; /* Change background color on hover */
+}
+
+.filter-select {
+  text-align: center; /* Center-align text */
+  color: white; /* Set text color to white */
+  padding: 10px; /* Add padding */
+  border: 0px solid #ddd; /* No border */
+  background-color: rgb(255, 0, 76); /* Bright pink background */
+  cursor: pointer; /* Change cursor to pointer */
+  border-radius: 20px; /* Rounded corners */
+  font-weight: bolder; /* Bold font */
+  font-size: larger; /* Larger font size */
+  margin: 0px auto; /* Center the select box */
+}
+
+.price,
+.product-name {
+  margin-top: 15px; /* Add top margin */
+}
+
+.price {
+  font-size: xx-large; /* Extra-large font size */
+  font-family: Arial, Helvetica, sans-serif; /* Font family */
+  font-weight: bold; /* Bold font */
+  user-select: none; /* Prevent text selection */
+}
+
+.products-grid {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Responsive columns */
+  gap: 20px; /* Space between grid items */
+  margin-top: 20px; /* Add top margin */
+  width: 85vw; /* Set width to 85% of the viewport width */
+}
+
+.product-name {
+  margin-top: 0px; /* No top margin */
+  user-select: none; /* Prevent text selection */
+  color: #840056; /* Dark pink color */
+  font-size: xx-large; /* Extra-large font size */
+  font-weight: bolder; /* Bold font */
+}
+
+.product-box {
+  cursor: pointer; /* Change cursor to pointer */
+  max-width: 300px; /* Maximum width */
+  min-width: 30px; /* Minimum width */
+  padding: 0px; /* No padding */
+  background-color: #ffffffcd; /* Semi-transparent white background */
+  border: 5px solid #840056; /* Dark pink border */
+  border-radius: 20px; /* Rounded corners */
+  text-align: center; /* Center-align text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effects */
+}
+
+.product-images {
+  border-radius: 15px; /* Rounded corners for images */
+  height: 300px; /* Fixed height */
+  width: 100%; /* Full width */
+  object-fit: cover; /* Cover the entire area */
+}
+
+.product-box:hover {
+  transform: scale(1.02); /* Scale effect on hover */
+  box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.add-to-cart {
+  margin: 20px; /* Add margin */
+  padding: 10px; /* Add padding */
+  font-size: larger; /* Larger font size */
+  border-radius: 10px; /* Rounded corners */
+  background-color: rgba(255, 0, 76, 0.585); /* Semi-transparent background */
+}
+
+.add,
+.minus {
+  cursor: pointer; /* Change cursor to pointer */
+  background: none; /* No background */
+  border: 0px; /* No border */
+  padding: 10px; /* Add padding */
+  font-weight: bolder; /* Bold font */
+  width: 20%; /* Set width */
+  font-size: 2rem; /* Large font size */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.quantity {
+  font-weight: bolder; /* Bold font */
+}
+
+.add {
+  color: green; /* Green color for add button */
+}
+
+.minus {
+  color: red; /* Red color for minus button */
+}
+
+footer {
+  background-color: rgba(255, 0, 76, 0.585); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect for backdrop */
+  -webkit-backdrop-filter: blur(10px); /* Safari support for blur effect */
+  color: #fff; /* White text color */
+  padding: 20px 0; /* Vertical padding */
+  text-align: center; /* Center-align text */
+  width: 100%; /* Full width */
+}
+
+.footer-content {
+  max-width: 1000px; /* Maximum width */
+  color: white; /* White text color */
+  margin: auto; /* Center the footer content */
+}
+
+.footer-content h3 {
+  color: white; /* White text color */
+  margin: 0; /* No margin */
+  padding: 0; /* No padding */
+  font-size: 24px; /* Font size */
+}
+
+.footer-content p {
+  margin: 10px 0; /* Vertical margin */
+  font-size: 14px; /* Font size */
+  color: white; /* White text color */
+}
+
+.socials {
+  list-style: none; /* Remove list styling */
+  padding: 0; /* No padding */
+}
+
+.socials li {
+  display: inline; /* Inline display for list items */
+  margin: 0 10px; /* Horizontal margin */
+}
+
+.socials a {
+  color: #fff; /* White text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Font size */
+}
+
+.footer-bottom {
+  margin-top: 20px; /* Top margin */
+  font-size: 12px; /* Font size */
+}
+
+.products-grid a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+}
+
+.products-grid a:hover {
+  color: inherit; /* Prevent color change on hover */
+}
+
+.products-grid img:hover {
+  transform: scale(1); /* Reset scale effect on hover */
+}
+
+.anim-text {
+  -webkit-text-stroke: 5px #840025; /* Text stroke for animated text */
+  text-align: left; /* Left-align text */
+  width: 50vw; /* Set width to 50% of viewport width */
+  font-size: 7.3rem; /* Large font size */
+  color: #ffffff; /* White text color */
+  user-select: none; /* Prevent text selection */
+  font-weight: bolder; /* Bold font */
+  text-shadow: 5px 5px 10px rgb(255, 0, 60); /* Shadow effect for text */
+}
+
+@media only screen and (max-width: 700px) {
+  .home-dash {
+    height: 60vh; /* Adjust height for smaller screens */
+  }
+  .anim-text {
+    width: 80vw; /* Adjust width for smaller screens */
+    font-size: 3rem; /* Adjust font size for smaller screens */
+  }
+  .search {
+    flex-direction: column; /* Stack search elements vertically */
+    width: 100%; /* Full width */
+  }
+  .search-box {
+    width: 90%; /* Adjust width for search box */
+  }
+
+  .filter-select {
+    margin-top: 20px; /* Add top margin */
+    width: 40%; /* Adjust width for select box */
+  }
+}

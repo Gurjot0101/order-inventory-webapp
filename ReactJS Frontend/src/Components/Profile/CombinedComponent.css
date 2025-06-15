@@ -1,0 +1,147 @@
+.profile-cont{
+    background-image: url('../../../public/home_wall.jpg');
+    height: 100vh;
+    background-color: #f44336;
+    padding-top: 6%;
+}
+
+.profile {
+    margin: 0px auto;
+    font-family: 'Arial', sans-serif;
+    width: 600px;
+    max-width: 600px;
+    padding: 100px;
+    background-color: #f9f9f9f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.main-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Form styling */
+.edit-user-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+/* Error message styling */
+.error-message {
+    color: #ff4d4d;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Button styles */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #eee;
+}
+
+/* Save button */
+.button-group button:first-of-type {
+    background-color: #4caf50;
+    color: white;
+}
+
+.button-group button:first-of-type:hover {
+    background-color: #45a049;
+}
+
+/* Clear button */
+.clear-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.clear-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Modal styling */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.modal p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.modal button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.modal button:hover {
+    background-color: #45a049;
+}

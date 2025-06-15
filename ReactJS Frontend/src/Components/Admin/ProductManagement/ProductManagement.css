@@ -1,0 +1,262 @@
+:root {
+  /* Define color variables for the theme */
+  --primary-color: #007bff;
+  --primary-color-dark: #0056b3; /* Darker shade for hover effects */
+  --secondary-color: #ff7e55;
+  --secondary-color-dark: #e67e22; /* Darker shade for hover effects */
+  --accent-color: #ffc107;
+  --danger-color: #dc3545;
+  --danger-color-dark: #a71d2a; /* Darker shade for hover effects */
+  --success-color: #28a745;
+  --success-color-dark: #1e7e34; /* Darker shade for hover effects */
+  --background-color: #f5f5f5; /* General background color */
+  --card-background: #ffffff; /* Background color for cards */
+  --text-color: #333333; /* Main text color */
+  --subtext-color: #666666; /* Subtext color */
+  --font-family: 'Poppins', sans-serif; /* Font family for the application */
+  --border-radius: 12px; /* Default border radius */
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Default box shadow */
+  --transition: 0.3s ease; /* Default transition effect */
+}
+
+/* Global Styles */
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: var(--font-family); /* Use the defined font family */
+  background-color: var(--background-color); /* Set background color */
+  color: var(--text-color); /* Set text color */
+}
+
+/* Container for Product Management */
+.product-management {
+  padding: 30px 20px; /* Add padding inside the container */
+  max-width: 1200px; /* Set maximum width */
+  margin: 40px auto; /* Center the container */
+  background-color: var(--background-color); /* Set background color */
+  border-radius: var(--border-radius); /* Set border radius */
+  box-shadow: var(--box-shadow); /* Apply box shadow */
+}
+
+/* Heading Style */
+.product-management h2 {
+  text-align: center; /* Center the heading */
+  font-size: 28px; /* Set font size */
+  color: var(--secondary-color); /* Set heading color */
+  margin-bottom: 30px; /* Add margin below the heading */
+  font-weight: 600; /* Set font weight */
+}
+
+/* Search Bar Styling */
+.search-bar {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping of items */
+  justify-content: space-between; /* Distribute space evenly */
+  align-items: center; /* Align items vertically */
+  padding: 15px; /* Add padding */
+  background-color: var(--secondary-color); /* Set background color */
+  border-radius: var(--border-radius); /* Set border radius */
+  margin-bottom: 30px; /* Add margin below */
+  gap: 10px; /* Space between items */
+}
+
+.search-form {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping of items */
+  align-items: center; /* Align items vertically */
+  gap: 10px; /* Space between form elements */
+  flex: 1; /* Allow the form to grow and fill available space */
+}
+
+/* Input and Select Styling */
+.search-form select,
+.search-form input {
+  padding: 8px 12px; /* Add padding */
+  border: 1px solid #ccc; /* Set border */
+  border-radius: 8px; /* Set border radius */
+  font-size: 14px; /* Set font size */
+}
+
+.search-form select:focus,
+.search-form input:focus {
+  outline: none; /* Remove outline on focus */
+  border-color: var(--primary-color); /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Add box shadow on focus */
+}
+
+/* Search Button Styling */
+.search-form button {
+  padding: 8px 16px; /* Add padding */
+  background-color: var(--primary-color); /* Set background color */
+  color: #fff; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Set border radius */
+  cursor: pointer; /* Change cursor on hover */
+  font-size: 14px; /* Set font size */
+  transition: background-color var(--transition), transform var(--transition); /* Set transition effects */
+}
+
+.search-form button:hover {
+  background-color: var(--primary-color-dark); /* Change background color on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Popup Message Styling */
+.popup-message {
+  background-color: var(--success-color); /* Set background color */
+  color: #fff; /* Set text color */
+  padding: 12px 20px; /* Add padding */
+  text-align: center; /* Center text */
+  border-radius: 8px; /* Set border radius */
+  margin-bottom: 20px; /* Add margin below */
+  font-weight: 500; /* Set font weight */
+  box-shadow: var(--box-shadow); /* Apply box shadow */
+}
+
+/* Product List Grid */
+.product-list {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid layout */
+  gap: 20px; /* Space between grid items */
+}
+
+/* Product Card Styling */
+.product-card {
+  background-color: #ffffff; /* Set card background color */
+  border: 1px solid #ddd; /* Set border */
+  border-radius: 12px; /* Set border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Apply box shadow */
+  overflow: hidden; /* Hide overflow */
+  padding: 20px; /* Add padding */
+  transition: transform 0.3s; /* Set transition for transform */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Move card up on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Product Image Styling */
+.product-image {
+  width: 100%; /* Full width */
+  height: 150px; /* Fixed height */
+  object-fit: contain; /* Ensure image is contained within bounds */
+  border-bottom: 1px solid #ddd; /* Add border below image */
+  background-color: #f0f0f0; /* Background color for empty space */
+}
+
+/* Product Card Heading and Description */
+.product-card h3 {
+  font-size: 20px; /* Set font size for product title */
+  margin: 15px; /* Add margin */
+  color: var(--primary-color); /* Set title color */
+}
+
+.product-card p {
+  margin: 5px 15px; /* Add margin */
+  color: var(--subtext-color); /* Set description color */
+  font-size: 14px; /* Set font size */
+}
+
+/* Product Actions Styling */
+.product-actions {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Distribute buttons evenly */
+  margin: 15px; /* Add margin */
+  margin-top: auto; /* Push actions to the bottom of the card */
+}
+
+/* Product Action Buttons */
+.product-actions button {
+  flex: 1; /* Allow buttons to grow equally */
+  padding: 8px 12px; /* Add padding */
+  margin: 0 5px; /* Margin between buttons */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Set border radius */
+  cursor: pointer; /* Change cursor on hover */
+  font-size: 14px; /* Set font size */
+  transition: background-color var(--transition), transform var(--transition); /* Set transition effects */
+  color: #fff; /* Set text color */
+}
+
+.product-actions button:first-child {
+  background-color: var(--accent-color); /* Set accent button color */
+}
+
+.product-actions button:last-child {
+  background-color: var(--danger-color); /* Set danger button color */
+}
+
+.product-actions button:hover:first-child {
+  background-color: #e0a800; /* Darker accent color on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.product-actions button:hover:last-child {
+  background-color: var(--danger-color-dark); /* Darker danger color on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Product Form Modal Styling */
+.product-form-container {
+  position: fixed; /* Fixed position for modal */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for centering */
+  background-color: var(--card-background); /* Set background color */
+  padding: 30px 25px; /* Add padding */
+  border-radius: var(--border-radius); /* Set border radius */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Apply box shadow */
+  z-index: 1000; /* Ensure modal is on top */
+  width: 90%; /* Responsive width */
+  max-width: 500px; /* Set maximum width */
+}
+
+/* Modal Heading Style */
+.product-form-container h2 {
+  text-align: center; /* Center heading */
+  font-size: 24px; /* Set font size */
+  color: var(--secondary-color); /* Set heading color */
+  margin-bottom: 20px; /* Add margin below */
+}
+
+/* Modal Input Fields */
+.product-form-container input,
+.product-form-container select {
+  width: 100%; /* Full width */
+  padding: 10px; /* Add padding */
+  margin-bottom: 15px; /* Add margin below */
+  border: 1px solid #ccc; /* Set border */
+  border-radius: 8px; /* Set border radius */
+}
+
+/* Modal Buttons */
+.product-form-container button {
+  padding: 10px 15px; /* Add padding */
+  background-color: var(--primary-color); /* Set background color */
+  color: #fff; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Set border radius */
+  cursor: pointer; /* Change cursor on hover */
+  font-size: 16px; /* Set font size */
+  transition: background-color var(--transition); /* Set transition effects */
+}
+
+.product-form-container button:hover {
+  background-color: var(--primary-color-dark); /* Change background color on hover */
+}
+
+/* Close Button Styling */
+.close-button {
+  position: absolute; /* Position absolute */
+  top: 15px; /* Position from top */
+  right: 15px; /* Position from right */
+  font-size: 20px; /* Set font size */
+  color: #333; /* Set color */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+/* Close Button Hover Effect */
+.close-button:hover {
+  color: var(--danger-color); /* Change color on hover */
+}

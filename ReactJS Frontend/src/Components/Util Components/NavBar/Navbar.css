@@ -1,0 +1,104 @@
+/* Responsive Navbar */
+
+/* Style for the header container */
+.header {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between logo and nav items */
+  align-items: center; /* Center items vertically */
+  font-weight: bolder; /* Bold font for the header */
+  padding: 0 30px; /* Horizontal padding */
+  background-color: rgba(255, 0, 76, 0.585); /* Semi-transparent background color */
+  backdrop-filter: blur(10px); /* Blur effect for background */
+  -webkit-backdrop-filter: blur(10px); /* Safari compatibility for blur effect */
+  position: fixed; /* Fixed positioning for the header */
+  width: 100%; /* Full width */
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* High z-index to stay on top of other elements */
+  box-sizing: border-box; /* Include padding in width calculation */
+  height: 9%; /* Height of the header */
+  left: 0; /* Align to the left */
+  box-shadow: 5px 0px 5px 5px rgba(255, 0, 76, 0.585); /* Shadow effect for depth */
+}
+
+/* Style for the logo inside the header */
+.header .logo {
+  font-size: 25px; /* Font size for logo */
+  color: white; /* White color for logo text */
+  font-weight: bolder; /* Bold font weight for logo */
+}
+
+/* Navigation styles */
+.header nav ul {
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Use flexbox for horizontal layout */
+  gap: 20px; /* Space between nav items */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Styles for anchor tags in navigation */
+.header nav ul li a {
+  font-size: larger; /* Larger font size for nav links */
+  text-decoration: none; /* Remove underline from links */
+  color: #ffffff; /* White color for links */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Hover effect for navigation links */
+.header nav ul li a:hover {
+  color: #43faf1; /* Change color on hover */
+}
+
+/* For smaller screens: Stack the items vertically */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack items vertically */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .header .logo {
+    margin-bottom: 15px; /* Space below the logo */
+  }
+
+  .header nav ul {
+    flex-direction: column; /* Stack nav items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 10px; /* Space between nav items */
+  }
+
+  .header nav ul li a {
+    font-size: medium; /* Adjust font size for nav links */
+  }
+
+  .header .get-started {
+    margin-top: 10px; /* Space above the get started button */
+    padding: 8px 16px; /* Padding for the button */
+    font-size: 14px; /* Font size for the button */
+  }
+}
+
+/* For very small screens: Adjust padding and font size */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 15px; /* Reduce padding for very small screens */
+  }
+
+  .header .logo {
+    font-size: 20px; /* Smaller font size for logo */
+  }
+
+  .header nav ul li a {
+    font-size: smaller; /* Smaller font size for nav links */
+    padding: 5px 0; /* Adjust padding for links */
+  }
+
+  .header nav ul {
+    gap: 8px; /* Reduce gap between nav items */
+  }
+
+  .header .get-started {
+    padding: 7px 14px; /* Adjust padding for the button */
+    font-size: 12px; /* Smaller font size for the button */
+  }
+}

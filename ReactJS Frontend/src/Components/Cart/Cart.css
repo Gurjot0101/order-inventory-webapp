@@ -1,0 +1,158 @@
+.cart {
+  background-color: #000000; /* Light reddish background */
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+
+.cart-container {
+  background-color: #ffffff; /* Light reddish background */
+  border: 2px solid #9c0000;
+  padding: 50px;
+  width: 60vw;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #9c0000; /* Reddish text color */
+}
+
+.cart-header,
+.cart-item {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #9c0000;
+  text-align: center;
+  color: black; /* Black text color */
+}
+
+.cart-header {
+  font-size: x-large;
+  color: white;
+  border: 1px solid #9c0000;
+  font-weight: bolder;
+  background-color: #000000; /* Light grey background for header */
+  border-radius: 10px;
+}
+
+.cart-item {
+  background-color: #000000; /* Light white row background */
+  transition: background-color 0.3s ease;
+  color: white;
+  border-radius: 10px;
+}
+
+.cart-item:hover {
+  background-color: #c02b76; /* Slightly darker white for hover effect */
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #9c0000; /* Reddish border */
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.minus-btn,
+.plus-btn {
+  background-color: #f2f2f2;
+  border: none;
+  font-size: 1.5rem;
+  padding: 5px;
+  width: 30px;
+  cursor: pointer;
+  color: black; /* Black text color for +/- buttons */
+}
+
+.minus-btn:hover,
+.plus-btn:hover {
+  background-color: #f8d7da; /* Light reddish hover effect */
+}
+
+.quantity {
+  font-size: 1.2rem;
+  padding: 0 10px;
+}
+
+.remove-btn {
+  background-color: #9c0000; /* Reddish background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: larger;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b; /* Darker reddish hover */
+}
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 2px solid #ddd;
+}
+
+.order-btn,
+.back-btn {
+  background-color: #9c0000; /* Greenish background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-btn:hover,
+.back-btn:hover {
+  background-color: #9c0000; /* Darker greenish hover */
+}
+
+.cart-summary span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #9c0000; /* Reddish subtotal */
+}
+
+.back-btn {
+  background-color: #9c0000; /* Reddish background for back button */
+}
+
+.back-btn:hover {
+  background-color: #c02b76; /* Lighter reddish hover */
+}
+
+.delivery-address {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff17;
+  border-radius: 10px;
+}
+
+.delivery-address h2 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: #9c0000; /* Reddish text color */
+  text-align: center;
+}
+
+.delivery-address input {
+  background-color: #c97da21e;
+  min-width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 3px solid #c02b76;
+  border-radius: 5px;
+}

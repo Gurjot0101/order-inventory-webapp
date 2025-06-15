@@ -1,0 +1,75 @@
+/* Container for the layout of the page */
+.container {
+  display: flex; /* Uses Flexbox to align child elements */
+  min-height: 100vh; /* Ensures the container takes at least the full height of the viewport */
+  background-color: white; /* Sets the background color of the container */
+}
+
+/* Section for displaying an image */
+.image-section {
+  flex: 1; /* Allows this section to take up equal space with the other section */
+  display: flex; /* Uses Flexbox to align content within this section */
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  background-color: white; /* Sets the background color of the image section */
+  padding: 20px; /* Adds padding inside the image section */
+}
+
+/* Styling for the image inside the image section */
+.image {
+  max-width: 100%; /* Ensures the image doesn't exceed the width of its container */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
+
+/* Section for displaying cards */
+.cards-section {
+  margin-top: 5%;
+  flex: 1; /* Allows this section to take up equal space with the other section */
+  background-color: #e74c3c; /* Sets the background color to a red shade */
+  padding: 40px; /* Adds padding inside the cards section */
+  display: flex; /* Uses Flexbox to align child elements */
+  flex-direction: column; /* Stacks child elements in a vertical column */
+  justify-content: center; /* Centers child elements vertically */
+  align-items: center; /* Centers child elements horizontally */
+}
+
+/* Styling for the heading text in the cards section */
+.heading {
+  color: white; /* Sets the text color to white */
+  font-size: 2.5em; /* Increases the font size of the heading */
+  font-weight: bold; /* Makes the heading text bold */
+  margin-bottom: 30px; /* Adds space below the heading */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow to the text */
+}
+
+/* Styling for each card in the cards section */
+.card {
+  background-color: white; /* Sets the background color of the card */
+  border-radius: 10px; /* Rounds the corners of the card */
+  padding: 20px; /* Adds padding inside the card */
+  margin: 10px; /* Adds space around each card */
+  width: 600px; /* Sets a fixed width for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow to the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds transition effects for hover states */
+  text-align: center; /* Centers the text inside the card */
+}
+
+/* Styling for the card title */
+.card-title {
+  margin: 0; /* Removes default margin around the title */
+  color: #e74c3c; /* Sets the color of the title text to match the section background */
+  font-size: 1.3em; /* Increases the font size of the title */
+}
+
+/* Styling for the card content */
+.card-content {
+  color: #333; /* Sets the text color of the content */
+  font-style: inherit; /* Inherits the font style from the parent element */
+  text-align: justify; /* Justifies the text inside the card */
+}
+
+/* Hover effects for the card */
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarges the card when hovered */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds a larger shadow to the card when hovered */
+}

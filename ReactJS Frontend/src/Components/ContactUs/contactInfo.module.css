@@ -1,0 +1,138 @@
+/* Container for the contact information section */
+.contact-info {
+  margin-top: 5%;
+  height: 85vh; /* Sets the height of the container to 85% of the viewport height */
+/* Sets the font family for text inside this container */
+  background-color: #e74c3c; /* Sets the background color to a shade of red */
+  padding: 50px; /* Adds padding inside the container */
+  border-radius: 1px; /* Rounds the corners of the container by 1 pixel */
+  position: relative; /* Allows positioning of child elements relative to this container */
+}
+
+/* Style for the main heading */
+.h1 {
+  text-align: center; /* Centers the text horizontally */
+  color: rgb(255, 255, 255); /* Sets the text color to white */
+  font-weight: bold; /* Makes the font bold */
+  margin-bottom: 60px; /* Adds space below the heading */
+  font-size: 2.5em; /* Sets the font size to 2.5 times the parent element’s font size */
+}
+
+/* Container for the card elements */
+.info-section {
+  display: flex; /* Uses flexbox layout */
+  justify-content: space-between; /* Distributes space evenly between cards */
+}
+
+/* Styles for each card */
+.card {
+  background-color: white; /* Sets the background color of the card to white */
+  border-radius: 3px; /* Rounds the corners of the card by 3 pixels */
+  padding: 20px; /* Adds padding inside the card */
+  flex: 1; /* Allows the card to grow and shrink equally with other flex items */
+  margin: 0 10px; /* Adds horizontal margin between cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the card */
+  display: flex; /* Uses flexbox layout inside the card */
+  flex-direction: column; /* Arranges children elements in a column */
+  align-items: center; /* Centers children elements horizontally */
+  text-align: center; /* Centers text inside the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smoothly animates changes to transform and box-shadow properties */
+}
+
+/* Hover effect for cards */
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarges the card when hovered */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a more pronounced shadow when hovered */
+}
+
+/* Header section inside each card */
+.card-header {
+  display: flex; /* Uses flexbox layout */
+  align-items: center; /* Aligns items vertically in the center */
+  margin-bottom: 10px; /* Adds space below the header */
+}
+
+/* Logo styling */
+.logo {
+  width: 64px; /* Sets the width of the logo */
+  height: 64px; /* Sets the height of the logo */
+  background-size: contain; /* Scales the background image to fit within the element */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  margin-right: 10px; /* Adds space to the right of the logo */
+}
+
+/* Specific logos for different cards */
+.address-logo {
+  background-image: url('../../../public/location.png'); /* Background image for address logo */
+}
+
+.phone-logo {
+  background-image: url('../../../public/contact-us.png'); /* Background image for phone logo */
+}
+
+.email-logo {
+  background-image: url('../../../public/email.png'); /* Background image for email logo */
+}
+
+/* Heading style inside cards */
+.heading {
+  color: #000000; /* Sets the text color to black */
+}
+
+/* Content text inside cards */
+.card-content {
+  color: #333; /* Sets the text color to a dark gray */
+}
+
+/* Footer section styling */
+.footer {
+  display: flex; /* Uses flexbox layout */
+  flex-direction: column; /* Arranges children elements in a column */
+  align-items: center; /* Centers children elements horizontally */
+  background-color: rgb(255, 255, 255); /* Sets the background color to white */
+  padding: 30px; /* Adds padding inside the footer */
+  border-radius: 1px; /* Rounds the corners of the footer by 1 pixel */
+  position: absolute; /* Positions the footer absolutely relative to the nearest positioned ancestor */
+  bottom: 0; /* Aligns the footer to the bottom of the container */
+  left: 0; /* Aligns the footer to the left edge of the container */
+  right: 0; /* Aligns the footer to the right edge of the container */
+}
+
+/* Heading inside the footer */
+.footer-heading {
+  font-family: 'Times New Roman', Times, serif; /* Sets the font family for the footer heading */
+  font-size: 1.5em; /* Sets the font size to 1.5 times the parent element’s font size */
+  margin-bottom: 30px; /* Adds space below the footer heading */
+}
+
+/* Container for footer logos */
+.footer-logos {
+  display: flex; /* Uses flexbox layout */
+  justify-content: center; /* Centers the logos horizontally */
+  gap: 20px; /* Adds space between logos */
+}
+
+/* Styling for each footer logo */
+.footer-logo {
+  width: 40px; /* Sets the width of the footer logo */
+  height: 50px; /* Sets the height of the footer logo */
+  background-size: contain; /* Scales the background image to fit within the element */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+
+/* Specific logos for the footer section */
+.logo1 {
+  background-image: url('../../../public/instagram.png'); /* Background image for Instagram logo */
+}
+
+.logo2 {
+  background-image: url('../../../public/facebook.png'); /* Background image for Facebook logo */
+}
+
+.logo3 {
+  background-image: url('../../../public/linkedin.png'); /* Background image for LinkedIn logo */
+}
+
+.logo4 {
+  background-image: url('../../../public/youtube.png'); /* Background image for YouTube logo */
+}

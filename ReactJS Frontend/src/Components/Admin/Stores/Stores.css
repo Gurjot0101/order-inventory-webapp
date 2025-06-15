@@ -1,0 +1,100 @@
+/* Stores.css */
+
+/* Container for the stores component */
+.stores-container {
+    width: 90%; /* Set container width to 90% of the viewport */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding inside the container */
+    background-color: #eeeeee; /* Light gray background */
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    /* Uncomment to use a different shadow color */
+    /* box-shadow: 0 8px 24px rgba(233, 63, 207, 0.1); */
+}
+
+/* Heading style for the stores section */
+.stores-heading {
+    text-align: center; /* Center the heading text */
+    margin-bottom: 30px; /* Space below the heading */
+    font-size: 24px; /* Font size */
+    color: #553f37; /* Dark brown color */
+    font-family: 'Poppins', sans-serif; /* Font family */
+}
+
+/* Style for the stores table */
+.stores-table {
+    width: 100%; /* Table takes full width */
+    border-collapse: collapse; /* Merge borders */
+    margin-top: 20px; /* Space above the table */
+    border-radius: 12px; /* Rounded corners for the table */
+    overflow: hidden; /* Hide overflow from rounded corners */
+    background-color: #ffffff; /* White background for the table */
+}
+
+/* Common styles for table headers and cells */
+.stores-table th,
+.stores-table td {
+    padding: 16px; /* Padding in cells */
+    text-align: center; /* Center the text in cells */
+    font-family: 'Roboto', sans-serif; /* Font family for text */
+}
+
+/* Table header styles */
+.stores-table th {
+    background-color: #ff7e55; /* Light orange background for headers */
+    color: #ffffff; /* White text color */
+    font-weight: 600; /* Semi-bold text */
+    text-transform: uppercase; /* Uppercase text for headers */
+    border-bottom: 2px solid #e97c5b; /* Darker orange border at bottom */
+}
+
+/* Alternate row coloring */
+.stores-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+/* Row hover effect */
+.stores-table tr:hover {
+    background-color: #f5c1b2; /* Dark orange background on hover */
+    color: #ffffff; /* Change text color to white on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Table cell styles */
+.stores-table td {
+    color: #553f37; /* Dark brown text color */
+    font-size: 14px; /* Font size for cell text */
+    border-bottom: 1px solid #ddd; /* Light gray border at the bottom */
+}
+
+/* Button styles in the table */
+.stores-table button {
+    background-color: #a4a09f; /* Neutral gray button background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 8px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Hover effect for buttons */
+.stores-table button:hover {
+    background-color: #d45850; /* Bright red background on hover */
+}
+
+/* Loading and error message styles */
+.loading, .error {
+    text-align: center; /* Center the text for loading and error messages */
+    font-size: 18px; /* Font size */
+}
+
+/* Style for loading message */
+.loading {
+    color: #666; /* Darker gray for loading text */
+}
+
+/* Style for error message */
+.error {
+    color: #ee3900; /* Bright red for error text */
+}

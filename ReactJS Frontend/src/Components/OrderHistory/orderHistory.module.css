@@ -1,0 +1,77 @@
+/* General Layout */
+.order-history-page {
+    display: flex; /* Use flexbox for layout */
+    font-family: 'Roboto', sans-serif; /* Set font family */
+    background-color: #000000; /* White background for the page */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    padding-top: 6%; /* Padding at the top */
+    height: 100vh;
+}
+
+/* Main content styling */
+.main-content {
+    flex: 1; /* Allow main content to fill available space */
+    padding: 10px; /* Padding around main content */
+    background-color: #000000; /* Dark pink background for main content */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Order history table */
+.order-history-table {
+    margin: 0px auto;
+    width: 80%; /* Full width for the table */
+    background-color: #ffffff; /* White background for table */
+    border-radius: 8px; /* Rounded corners for table */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    overflow: hidden; /* Hide overflow */
+}
+
+.table-header, .table-row {
+    display: grid; /* Use grid layout for rows */
+    grid-template-columns: repeat(5, 1fr); /* Create 5 equal columns */
+    padding: 15px 20px; /* Padding inside rows */
+    font-size: 14px; /* Font size for table text */
+    color: #000000; /* Gray text color */
+    border-bottom: 1px solid #eee; /* Light gray border between rows */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.table-header {
+    background-color: #4e001e; /* White background for header */
+    font-weight: bold; /* Bold font for header */
+    color: #ffffff; /* Light gray text color */
+}
+
+.table-row:hover {
+    background-color: #4e001e;
+    color:white /* Light pink background on row hover */
+}
+
+/* Order status color */
+.status.complete {
+    color: green; /* Green text for complete status */
+}
+
+.status.shipped {
+    color: blue; /* Blue text for shipped status */
+}
+
+.status.cancelled {
+    color: red; /* Red text for cancelled status */
+}
+
+/* Action buttons */
+.action button {
+    background-color: #f0f0f0; /* Light gray background for buttons */
+    border: none; /* Remove default border */
+    padding: 8px 10px; /* Padding inside buttons */
+    margin-right: 5px; /* Space between buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 12px; /* Font size for button text */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.action button:hover {
+    background-color: #f7e1f3; /* Premium pink background on button hover */
+}

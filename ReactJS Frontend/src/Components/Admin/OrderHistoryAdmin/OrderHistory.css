@@ -1,0 +1,80 @@
+.order-history-container {
+  width: 90%; /* Set the width of the container to 90% of the parent */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add padding inside the container */
+  background-color: #eeeeee; /* Light gray background */
+  border-radius: 16px; /* Round the corners of the container */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+/* Heading for the order history */
+.order-history-heading {
+  text-align: center; /* Center-align the heading text */
+  margin-bottom: 30px; /* Space below the heading */
+  font-size: 24px; /* Set font size for the heading */
+  color: #553f37; /* Dark brown color for the heading text */
+  font-family: 'Poppins', sans-serif; /* Font family for the heading */
+}
+
+/* Style for the table */
+.order-history-table {
+  width: 100%; /* Set table width to 100% of the container */
+  border-collapse: collapse; /* Collapse borders for a clean look */
+  margin-top: 20px; /* Space above the table */
+  border-radius: 12px; /* Round the corners of the table */
+  overflow: hidden; /* Prevent overflow of table content */
+  background-color: #ffffff; /* White background for the table */
+}
+
+/* Table headers */
+.order-history-table th {
+  padding: 16px; /* Add padding inside header cells */
+  text-align: center; /* Center the text in headers */
+  font-family: 'Roboto', sans-serif; /* Font family for headers */
+  background-color: #ff7e55; /* Light orange color for header background */
+  color: #ffffff; /* White text color for headers */
+  font-weight: 600; /* Bold text in headers */
+  text-transform: uppercase; /* Uppercase text in headers */
+  border-bottom: 2px solid #e97c5b; /* Darker orange border at the bottom of headers */
+}
+
+/* Table cells */
+.order-history-table td {
+  padding: 16px; /* Add padding inside data cells */
+  text-align: center; /* Center the text in cells */
+  color: #553f37; /* Dark brown text color for cells */
+  font-size: 14px; /* Set font size for cell text */
+  border-bottom: 1px solid #ddd; /* Light gray border at the bottom of cells */
+}
+
+/* Alternating row colors */
+.order-history-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray background for alternate rows */
+}
+
+/* Hover effect for rows */
+.order-history-table tr:hover {
+  background-color: #f5c1b2; /* Dark orange background on hover */
+  color: #ffffff; /* Change text color to white on hover */
+  transition: background-color 0.3s ease; /* Smooth transition effect for background color */
+}
+
+/* Status colors */
+.order-history-table .status {
+  font-weight: 600; /* Bold text for status */
+  text-transform: uppercase; /* Uppercase text for status */
+}
+
+.status.complete {
+  color: #4CAF50; /* Green color for complete status */
+}
+
+.status.shipped {
+  color: #2196F3; /* Blue color for shipped status */
+}
+
+.status.cancelled {
+  color: #ee3900; /* Bright red color for cancelled status */
+}
+
+/* Remove button styles and filters section, if applicable */
