@@ -137,7 +137,7 @@ order-inventory-webapp/
 | Method | Endpoint | Description | Auth Required |
 |--------|----------|-------------|---------------|
 | POST | `/api/auth/register` | Register a new user | No |
-| POST | `/api/auth/login` | Login and receive JWT token | No |
+| POST | `/api/auth/login` | Login and receive JWT token (Role Based Admin/User) | No |
 
 ### Orders
 | Method | Endpoint | Description | Auth Required |
