@@ -211,12 +211,6 @@ npm run build
 
 ---
 
-## 📸 Screenshots
-
-> _Add screenshots of the Dashboard, Orders page, and Inventory page here._
-
----
-
 ## 🤝 Contributing
 
 1. Fork the repository
