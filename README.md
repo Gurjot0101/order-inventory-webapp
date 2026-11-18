@@ -67,7 +67,7 @@ order-inventory-webapp/
 
 - Java 17+
 - Node.js 18+ & npm
-- MySQL or PostgreSQL
+- PostgreSQL
 - Maven 3.8+
 
 ---
@@ -98,11 +98,7 @@ order-inventory-webapp/
    CREATE DATABASE order_inventory_db;
    ```
 
-4. **Run the Spring Boot application**
-   ```bash
-   mvn spring-boot:run
-   ```
-   The backend starts at `http://localhost:8080`
+4. The backend starts at `http://localhost:8080`
 
 ---
 
